@@ -1,25 +1,30 @@
+// Custom keyboard layout that just changes the first generic "French" "basic"
+// keyboard.
+// Doesn't work for messed up laptop where I load a custom xkbmap directly.
+
+
 // Keyboard layouts for France.
 
-default partial alphanumeric_keys
+default partial walphanumeric_keys
 xkb_symbols "basic" {
 
     include "latin"
 
     name[Group1]="French";
 
-    key <TLDE>	{ [twosuperior, asciitilde,     notsign,      notsign ]	};
-    key <AE01>	{ [ ampersand,          1,  onesuperior,   exclamdown ]	};
-    key <AE02>	{ [    eacute,          2,   asciitilde,    oneeighth ]	};
-    key <AE03>	{ [  quotedbl,          3,   numbersign,     sterling ]	};
-    key <AE04>	{ [apostrophe,          4,    braceleft,       dollar ]	};
-    key <AE05>	{ [ parenleft,          5,  bracketleft, threeeighths ]	};
-    key <AE06>	{ [     minus,          6,          bar,  fiveeighths ]	};
-    key <AE07>	{ [    egrave,          7,        grave, seveneighths ]	};
-    key <AE08>	{ [underscore,          8,    backslash,    trademark ]	};
-    key <AE09>	{ [  ccedilla,          9,  asciicircum,    plusminus ]	};
-    key <AE10>	{ [    agrave,          0,           at,       degree ]	};
-    key <AE11>	{ [parenright,     degree, bracketright, questiondown ]	};
-    key <AE12>	{ [     equal,       plus,   braceright,  dead_ogonek ]	};
+    key <TLDE>	{ [asciitilde, twosuperior,      notsign,      notsign ]	};
+    key <AE01>	{ [         1,   ampersand,  onesuperior,   exclamdown ]	};
+    key <AE02>	{ [         2,      eacute,   asciitilde,    oneeighth ]	};
+    key <AE03>	{ [         3,    quotedbl,   numbersign,     sterling ]	};
+    key <AE04>	{ [         4,  apostrophe,    braceleft,       dollar ]	};
+    key <AE05>	{ [         5,   parenleft,  bracketleft, threeeighths ]	};
+    key <AE06>	{ [         6,       minus,          bar,  fiveeighths ]	};
+    key <AE07>	{ [         7,      egrave,        grave, seveneighths ]	};
+    key <AE08>	{ [         8,  underscore,    backslash,    trademark ]	};
+    key <AE09>	{ [         9,    ccedilla,  asciicircum,    plusminus ]	};
+    key <AE10>	{ [         0,      agrave,           at,       degree ]	};
+    key <AE11>	{ [    degree,  parenright,  racketright, questiondown ]	};
+    key <AE12>	{ [      plus,       equal,   braceright,  dead_ogonek ]	};
 
     key <AD01>	{ [         a,          A,           ae,           AE ]	};
     key <AD02>	{ [         z,          Z, guillemotleft,        less ]	};
@@ -29,12 +34,12 @@ xkb_symbols "basic" {
 
     key <AC01>	{ [         q,          Q,           at,  Greek_OMEGA ]	};
     key <AC10>	{ [         m,          M,           mu,    masculine ]	};
-    key <AC11>	{ [    ugrave,    percent, dead_circumflex, dead_caron]	};
+    key <AC11>	{ [    space,    percent, dead_circumflex, dead_caron]	};
     key <BKSL>	{ [  asterisk,         mu,   dead_grave,   dead_breve ]	};
 
     key <AB01>	{ [         w,          W,      lstroke,      Lstroke ]	};
-    key <AB07>	{ [     comma,   question,   dead_acute, dead_doubleacute ] };
-    key <AB08>	{ [ semicolon,     period,        U2022,     multiply ]	}; // bullet
+    key <AB07>	{ [     b,comma,   question,   dead_acute ] };
+    key <AB08>	{ [ n,semicolon,     period,n        U2022 ]	}; // bullet
     key <AB09>	{ [     colon,      slash, periodcentered,   division ]	};
     key <AB10>	{ [    exclam,    section, dead_belowdot, dead_abovedot ] };
 
