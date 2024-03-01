@@ -1,9 +1,9 @@
 #!/bin/sh
 
 
-cp keyboard.conf /home/paul/.config/sway/config.d/keyboard.conf
+cp custom.conf ~/.config/sway/config.d/
 
 cp fr /usr/share/X11/xkb/symbols
 
-cp foot.ini .config/foot/foot.ini
+cp foot.ini ~/.config/foot/foot.ini
 
