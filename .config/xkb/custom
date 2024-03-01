@@ -1487,21 +1487,21 @@ xkb_symbols "pc+fr+inet(evdev)" {
     key <HOME> {         [            Home ] };
     key <UP> {
         type= "FOUR_LEVEL",
-        [            Up,      Prior,     Up,     Prior ]
+        [            Up,      Up,     Up,     Up ]
     };
     key <PGUP> {         [           Prior ] };
     key <LEFT> {
         type= "FOUR_LEVEL",
-        [            Left,      Prior,     Left,     Prior ]
+        [            Left,      Left,     Left,     Left ]
     };
     key <RGHT> {
         type= "FOUR_LEVEL",
-        [            Right,      Next,     Right,     Next ]
+        [            Right,      Right,     Right,     Right ]
     };
     key  <END> {         [             End ] };
     key <DOWN> {
         type= "FOUR_LEVEL",
-        [            Down,      Next,     Down,     Next ]
+        [            Down,      Down,     Down,     Down ]
     };
     key <PGDN> {         [            Next ] };
     key  <INS> {         [          Insert ] };
